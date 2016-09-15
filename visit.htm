@@ -1,0 +1,40 @@
+
+
+		<div id="div_id" class="container">
+			<center><h3 style="color:purple"> Add Visitor's Here</h3></center>
+			<hr>
+			<div id="form_div_id">
+
+		
+				<form  ng-controller="Add_Visitor">
+					<div id="login_id">
+					<br/><b>Name</b><br/>
+					<input type="text" id="name_id" min="30" ng-model="Visitor_Name" placeholder="Visitor  name" style="width: 200px; height: 35px" onkeyup="validateName()" />&nbsp <span id="message_name"></span><br/><br/>
+					<label><b>Email:</b></label><br/>
+					<input type="email" id="email_id" ng-model="Visitor_Email" placeholder="Visitor mail-id" style="width: 200px; height: 35px" onkeyup="validateEmail()">&nbsp <span id="message_email"></span><br/><br/>	
+					<label><b>Contact No. :</b></label><br/>
+				+91<input type="text" name="mobno" id="mobno" ng-model="Visitor_Mobno" placeholder="10 Digit Contact Number" maxlength="10" style="width: 200px; height: 35px" onkeyup="validateMobile()">&nbsp <span id="message_phone"></span><br/><br/><br/>
+					<label><b>In time:</b></label><br/>
+					<input type="time" id="exampleInput" name="input" ng-model="Visitor_In_Time" placeholder="HH:mm:ss" min="00:00:00" max="24:00:00" size="6" /><br/></br>
+					<label><b>Out time:</b></label><br/>
+					<input type="time" id="exampleOutput" name="input" ng-model="Visitor_Out_Time" placeholder="HH:mm:ss" min="00:00:00" max="24:00:00" size="6"  onkeyup="validateTime()">&nbsp <span id="message_time"></span><br/><br/>
+
+						<div id="login_Button-id">
+							<ul>
+								<li>
+									<input type="submit" value="Add Visitor" ng-click="Add_Visitor_Function()" onClick="this.form.reset()" class ="btn btn-default" data-toggle="tooltip" title="Submit data!" >
+							   </li>
+							   <li>
+								<button type="button"  onClick="this.form.reset()" class ="btn btn-default" data-toggle="tooltip" title="Reset Form!">Cancel</button>
+								
+							   </li>
+							</ul>
+
+							
+
+						</div> 
+					</div>
+				</form>
+			</div>
+		</div>		
+			

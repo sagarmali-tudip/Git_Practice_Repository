@@ -1,0 +1,43 @@
+
+
+
+
+
+		<div id="div_id">
+			<center><h3 style="color:purple"> Add Receptionist Here</h3></center>
+			<hr>
+			<div id="form_div_id">
+
+		
+				<form  ng-controller="Add_Receptionist">
+					<div id="login_id">
+					<br/><b>Receptionist's Name:</b><br/>
+					<input type="text" id="name_id" min="30" ng-model="Receptionist_Name" placeholder="Your Full name" style="width: 200px; height: 35px" onkeyup="validateName()" />&nbsp <span id="message_name"></span><br/><br/>
+					<label><b>Email:</b></label><br/>
+					<input type="email" id="email_id" ng-model="Receptionist_Email" placeholder="Your mail-id" style="width: 200px; height: 35px" onkeyup="validateEmail()">&nbsp <span id="message_email"></span><br/><br/>	
+					
+					<label><b>Password:<b></label><br>
+					<input type="password" id = "password" ng-model="Receptionist_Password" placeholder="Choose Your Password" maxlength="20" style="width: 200px; height: 35px"><br><br/>
+					<label><b>Confirm Password:<b></label><br>
+					<input type="password" id = "confirm_password" ng-model="password" placeholder="Confirm Password " maxlength="20" style="width: 200px; height: 35px" onkeyup="validatePassword()">&nbsp
+					<span id="message_pass"></span><br><br/>
+						<div id="login_Button-id">
+							<ul>
+								<li>
+									<input type="submit" value="Add Receptionist" ng-click="Add_Receptionist_Function()" onClick="this.form.reset()" class ="btn btn-default" data-toggle="tooltip" title="Submit Data!">
+							   </li>
+							   <li>
+								<input type="button"  value="Cancel" onClick="this.form.reset()" class ="btn btn-default" data-toggle="tooltip" title="Reset Form!"></button>
+								
+							   </li>
+							</ul>
+
+							
+
+						</div> 
+					</div>
+				</form>
+			</div>
+		</div>		
+			
+	</body>
